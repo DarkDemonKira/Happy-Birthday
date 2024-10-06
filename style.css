@@ -39,7 +39,7 @@ body {
   padding: 10px;
 }
 .paper.image p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 img {
@@ -64,10 +64,33 @@ img {
 
 p {
   font-family: 'Zeyada';
-  font-size: 50px;
+  font-size: 40px;
   color: rgb(0,0,100);
   opacity: 0.75;
   user-select: none;
   
-  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+  /* filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9)); */
+}
+
+@media screen and (max-width: 480px) {
+  .paper {
+    padding: 15px 20px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  img {
+    max-height: 100px;
+  }
+
+  .paper.heart {
+    width: 120px;
+    height: 120px;
+  }
+
+  .paper.heart::after {
+    background-size: 100px;
+  }
 }
